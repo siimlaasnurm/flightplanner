@@ -15,9 +15,9 @@ public class Airport {
     private String shortName;
     private String city;
 
-    @OneToMany(mappedBy = "DepartureAirport")
+    @OneToMany(mappedBy = "departureAirport")
     private Collection<Flight> departingFlights;
-    @OneToMany(mappedBy = "ArrivalAirport")
+    @OneToMany(mappedBy = "arrivalAirport")
     private Collection<Flight> arrivingFlights;
 
 }

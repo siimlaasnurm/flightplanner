@@ -20,4 +20,28 @@ public class Airport {
     @OneToMany(mappedBy = "arrivalAirport")
     private Collection<Flight> arrivingFlights;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getShortName() {
+        return shortName;
+    }
+
+    public void setShortName(String name) {
+        this.shortName = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
 }

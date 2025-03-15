@@ -21,4 +21,20 @@ public class Airplane {
     @OneToMany
     private Collection<AirplaneZone> zones;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public AirplaneType getAirplaneType() {
+        return airplaneType;
+    }
+
+    public void setAirplaneType(AirplaneType type) {
+        this.airplaneType = type;
+    }
+
 }

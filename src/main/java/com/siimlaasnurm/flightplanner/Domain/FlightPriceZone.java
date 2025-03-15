@@ -16,4 +16,28 @@ public class FlightPriceZone {
     @ManyToOne
     private AirplaneZone airplaneZone;
 
+    public Number getPrice() {
+        return price;
+    }
+
+    public void setPrice(Number price) {
+        this.price = price;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
+    }
+
+    public AirplaneZone getAirplaneZone() {
+        return airplaneZone;
+    }
+
+    public void setAirplaneZone(AirplaneZone zone) {
+        this.airplaneZone = zone;
+    }
+
 }

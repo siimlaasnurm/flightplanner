@@ -22,4 +22,28 @@ public class AirplaneZone {
     @OneToMany
     private Collection<FlightPriceZone> flightPrices;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getRowCount() {
+        return rows;
+    }
+
+    public void setRowCount(Integer rows) {
+        this.rows = rows;
+    }
+
+    public Airplane getAirplane() {
+        return airplane;
+    }
+
+    public void setAirplane(Airplane airplane) {
+        this.airplane = airplane;
+    }
+
 }

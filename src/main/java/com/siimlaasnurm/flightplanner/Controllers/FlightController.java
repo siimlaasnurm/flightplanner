@@ -3,6 +3,7 @@ package com.siimlaasnurm.flightplanner.Controllers;
 import com.siimlaasnurm.flightplanner.Domain.Flight;
 import com.siimlaasnurm.flightplanner.Repository.FlightRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +22,11 @@ public class FlightController {
     @GetMapping
     public List<Flight> getFlights() {
         return flightRepository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Flight getFlight(@PathVariable Integer id) {
+        return flightRepository.findById(id).orElse(null);
     }
 
 }
